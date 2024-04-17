@@ -2321,7 +2321,7 @@ const char* retro_get_system_directory()
 
 void retro_get_system_info(struct retro_system_info *info)
 {
-   info->library_name = "Flycast";
+   info->library_name = "MorpheusCast Xtreme Acc";
 #ifndef GIT_VERSION
 #define GIT_VERSION "undefined"
 #endif

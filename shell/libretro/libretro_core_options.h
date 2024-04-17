@@ -186,7 +186,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
 #ifdef LOW_END
       "disabled",
 #else
-      "enabled",
+      "disabled",
 #endif
    },
    {
@@ -284,7 +284,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
          { NULL, NULL },
       },
 #ifdef LOW_RES
-      "320x240",
+      "640x480",
 #else
       "640x480",
 #endif
@@ -353,7 +353,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
 #if defined(LOW_END)
       "per-strip (fast, least accurate)",
 #else
-      "per-triangle (normal)",
+      "per-strip (fast, least accurate)",
 #endif
    },
 #if defined(HAVE_OIT) || defined(HAVE_VULKAN) || defined(HAVE_D3D11)
@@ -445,7 +445,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
          { "enabled",  NULL },
          { NULL, NULL },
       },
-      "enabled",
+      "disabled",
    },
    {
       CORE_OPTION_NAME "_volume_modifier_enable",
@@ -459,7 +459,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
          { "enabled",  NULL },
          { NULL, NULL },
       },
-      "enabled",
+      "disabled",
    },
    {
       CORE_OPTION_NAME "_anisotropic_filtering",
@@ -476,7 +476,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
          { "16",  NULL },
          { NULL, NULL },
       },
-      "4",
+      "off",
    },
    {
       CORE_OPTION_NAME "_texture_filtering",
@@ -594,7 +594,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
          { "enabled",  NULL },
          { NULL, NULL },
       },
-      "enabled",
+      "disabled",
    },
    {
       CORE_OPTION_NAME "_threaded_rendering",
@@ -624,9 +624,9 @@ struct retro_core_option_v2_definition option_defs_us[] = {
          { NULL, NULL },
       },
 #ifdef LOW_END
-      "some",
+      "more",
 #else
-      "disabled",
+      "more",
 #endif
    },
    {
@@ -691,7 +691,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
 #ifdef LOW_END
       "enabled",
 #else
-      "disabled",
+      "enabled",
 #endif
    },
    {
@@ -716,6 +716,24 @@ struct retro_core_option_v2_definition option_defs_us[] = {
       NULL,
       "hacks",
       {
+         { "10", "10 MHz" },
+         { "15", "15 MHz" },
+         { "20", "20 MHz" },
+         { "25", "25 MHz" },
+         { "30", "30 MHz" },
+         { "35", "35 MHz" },
+         { "40", "40 MHz" },
+         { "45", "45 MHz" },
+         { "50", "50 MHz" },
+         { "55", "55 MHz" },
+         { "60", "60 MHz" },
+         { "65", "65 MHz" },
+         { "70", "70 MHz" },
+         { "75", "75 MHz" },
+         { "80", "80 MHz" },
+         { "85", "85 MHz" },
+         { "90", "90 MHz" },
+         { "95", "95 MHz" },		  
          { "100", "100 MHz" },
          { "110", "110 MHz" },
          { "120", "120 MHz" },
@@ -759,7 +777,7 @@ struct retro_core_option_v2_definition option_defs_us[] = {
          { "500", "500 MHz" },
          { NULL, NULL },
       },
-      "200",
+      "100",
    },
    {
       CORE_OPTION_NAME "_custom_textures",
